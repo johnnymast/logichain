@@ -3,6 +3,9 @@
   "description": "A better description will be added later",
   "type": "library",
   "license": "MIT",
+  "require": {
+    "php": ">=8.4"
+  },
   "autoload": {
     "psr-4": {
       "Johnny\\Workflow\\": "src/"
@@ -17,13 +20,15 @@
       "email": "mastjohnny@gmail.com"
     }
   ],
-  "minimum-stability": "dev",
   "require-dev": {
+    "pestphp/pest": "^3.0",
     "pestphp/pest-plugin-browser": "5.x-dev"
   },
   "config": {
     "allow-plugins": {
       "pestphp/pest-plugin": true
     }
-  }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
 }

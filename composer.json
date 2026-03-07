@@ -21,8 +21,7 @@
     }
   ],
   "require-dev": {
-    "pestphp/pest": "^3.0",
-    "pestphp/pest-plugin-browser": "5.x-dev"
+    "pestphp/pest": "^3.0"
   },
   "config": {
     "allow-plugins": {

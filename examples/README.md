@@ -4,7 +4,7 @@
 ## Basic
 
 The most minimal example showing how a workflow operates.  
-A workflow is built from a sequence of steps, each receiving and returning a `WorkflowContext`.  
+A workflow is built from a sequence of steps, each receiving and returning a `**WorkflowContext**`.  
 Every step can mutate the value or simply pass the context forward.
 
 This example demonstrates:
@@ -12,7 +12,7 @@ This example demonstrates:
 - Creating a workflow  
 - Adding simple mutation steps  
 - Running the workflow with an initial value  
-- Inspecting the final `WorkflowResult`
+- Inspecting the final `**WorkflowResult**`
 
 [Basic Example](basic.php)
 
@@ -20,15 +20,15 @@ This example demonstrates:
 
 ## Failure and Success
 
-This example shows how to inspect a `WorkflowResult` directly without using callbacks.  
+This example shows how to inspect a `**WorkflowResult**` directly without using callbacks.  
 It demonstrates how the engine behaves when:
 
 - All steps succeed  
 - A step returns an error via `withError()`  
 - The workflow stops immediately on failure  
 - You check the result using:
-  - `$result->succeeded()`  
-  - `$result->failed()`  
+  - `$result->didSucceed()`  
+  - `$result->didFail()`  
   - `$result->success`  
   - `$result->context->value`  
   - `$result->context->error`  
@@ -40,7 +40,6 @@ This example is the foundation for understanding how the engine handles control 
 
 ---
 
-
 ## Introducing Callbacks
 
 Callbacks allow you to react to the final outcome of a workflow without mixing side‑effects into your workflow steps.
@@ -51,7 +50,7 @@ A workflow can register two types of callbacks:
 - **failed(Closure)** — executed only when a step returns an error
 
 Callbacks are optional helpers.  
-They do **not** replace the `WorkflowResult` object.  
+They do **not** replace the `**WorkflowResult**` object.  
 You always receive a result and can still inspect it manually:
 
 - `$result->didSucceed()`  
@@ -67,7 +66,6 @@ This makes callbacks ideal for logging, notifications, or cleanup logic, while k
 
 ---
 
-
 ## Real World
 
 This example demonstrates how a workflow can coordinate multiple services in a realistic scenario.  
@@ -80,7 +78,14 @@ The workflow simulates a simple order‑processing pipeline:
 
 All supporting classes live in `examples/Misc/` and contain placeholder methods to keep the example focused on workflow orchestration rather than implementation details.
 
-Even in a real‑world workflow, you still receive a `WorkflowResult` object and can inspect:
+The following classes are used:
+
+- **OrderValidator**  
+- **OrderService**  
+- **OrderRepository**  
+- **EmailService**
+
+Even in a real‑world workflow, you still receive a `**WorkflowResult**` object and can inspect:
 
 - `$result->didSucceed()`  
 - `$result->didFail()`  

@@ -109,23 +109,6 @@ If you are a backend engineer (like my self) you know how anoying errors without
 alway be a concept of the source (the context) and the status of the Workflow with the [WorkflowResult](src/WorkflowResult.php) that will also be passed to the failed callback.
 This is how the project became a litle more technical but also more usefull in the end.
 
-## Todo examples
-
-- [ ] Add a real world scenario and also use this for documentation.
-- [ ] Extend Workflow and closely lock down types
-
-## Basic
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis, mi at pretium commodo, libero mi convallis tellus, 
-id volutpat lectus turpis vel turpis. Phasellus id luctus risus, in commodo mi. Phasellus tempus quis tellus sit amet malesuada. 
-Donec ultrices justo sed libero blandit, ac efficitur tellus sagittis. Etiam vulputate ante id nisi volutpat cursus. 
-Morbi pretium euismod laoreet. Donec elementum volutpat ante, eu tempus arcu malesuada non. Nam mauris arcu, 
-ornare a rutrum vitae, rutrum vitae massa. Suspendisse viverra ex ut ipsum commodo, id aliquet nibh tincidunt. 
-Quisque ac purus ac quam faucibus bibendum. Nunc a rhoncus lorem. Nulla imperdiet gravida ipsum, vitae suscipit 
-libero condimentum sed. Aenean eget diam iaculis, viverra nisi vel, suscipit massa. Sed ac arcu urna.
-
-[Basic Examle](basic.php)
-
 ## MIT License
 
 Copyright (c) 2026 Johnny Mast <mastjohnny@gmail.com>

@@ -4,7 +4,7 @@
 ## Basic
 
 The most minimal example showing how a workflow operates.  
-A workflow is built from a sequence of steps, each receiving and returning a `**WorkflowContext**`.  
+A workflow is built from a sequence of steps, each receiving and returning a **WorkflowContext**.  
 Every step can mutate the value or simply pass the context forward.
 
 This example demonstrates:
@@ -50,7 +50,7 @@ A workflow can register two types of callbacks:
 - **failed(Closure)** — executed only when a step returns an error
 
 Callbacks are optional helpers.  
-They do **not** replace the `**WorkflowResult**` object.  
+They do **not** replace the **WorkflowResult** object.  
 You always receive a result and can still inspect it manually:
 
 - `$result->didSucceed()`  

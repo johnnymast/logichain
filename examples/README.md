@@ -27,12 +27,12 @@ It demonstrates how the engine behaves when:
 - A step returns an error via **withError()**  
 - The workflow stops immediately on failure  
 - You check the result using:
-  - **$result->succeeded()**  
-  - **$result->failed()**  
-  - **$result->success**  
-  - **$result->context->value**  
-  - **$result->context->error**  
-  - **$result->context->failedStep**
+  - $result->succeeded()  
+  - $result->failed()  
+  - $result->success
+  - $result->context->value  
+  - $result->context->error
+  - $result->context->failedStep
 
 This example is the foundation for understanding how the engine handles control flow.
 
@@ -56,10 +56,10 @@ You always receive a result and can still inspect it manually:
 
 - **$result->didSucceed()**  
 - **$result->didFail()**  
-- **$result->success**  
-- **$result->context->value**  
-- **$result->context->error**  
-- **$result->context->failedStep**
+- $result->success
+- $result->context->value  
+- $result->context->error
+- $result->context->failedStep
 
 This makes callbacks ideal for logging, notifications, or cleanup logic, while keeping your workflow steps pure and focused.
 
@@ -82,11 +82,11 @@ All supporting classes live in **examples/Misc/** and contain placeholder method
 
 Even in a real‑world workflow, you still receive a **WorkflowResult** object and can inspect:
 
-- **$result->didSucceed()**  
-- **$result->didFail()**  
-- **$result->context->value**  
-- **$result->context->error**  
-- **$result->context->failedStep**  
+- $result->didSucceed()  
+- $result->didFail() 
+- $result->context->value  
+- $result->context->error 
+- $result->context->failedStep
 
 This example shows how workflows can act as clean, predictable pipelines for multi‑step business logic.
 

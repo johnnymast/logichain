@@ -1,5 +1,7 @@
 <?php
 
+namespace Examples;
+
 include __DIR__ . "/../vendor/autoload.php";
 
 use Johnny\Workflow\Workflow;

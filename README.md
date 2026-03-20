@@ -4,9 +4,20 @@
 
 ## Description
 
-Todo ..
 
-You might want to add a simple thing where you can debug the reason of failure.
+Workflow is built on a simple belief: complex logic shouldn’t feel complex.
+This library gives you a clean, expressive way to structure multi‑step processes without drowning in conditionals, flags, or scattered service calls. Every workflow becomes a clear, linear story — one step at a time — with predictable behavior and a result you can always trust.
+
+Whether you’re transforming data, orchestrating services, or coordinating real‑world business operations, Workflow helps you keep your code honest and your intent visible. No magic, no hidden state, no surprises. Just a lightweight pipeline that does exactly what you tell it to do.
+
+It’s designed for developers who care about clarity.
+For teams that value maintainability.
+And for projects where the flow of logic matters just as much as the outcome.
+
+If you’ve ever wished your application logic read more like a narrative and less like a maze, you’ll feel right at home here.
+
+
+ - You might want to add a simple thing where you can debug the reason of failure.
 
 
 # Did i overengineer this class?

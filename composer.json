@@ -9,6 +9,7 @@
   "autoload": {
     "psr-4": {
       "Johnny\\Workflow\\": "src/",
+      "Examples\\": "examples/",
       "Tests\\": "tests/"
     }
   },

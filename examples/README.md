@@ -54,8 +54,8 @@ Callbacks are optional helpers.
 They do **not** replace the **WorkflowResult** object.  
 You always receive a result and can still inspect it manually:
 
-- **$result->didSucceed()**  
-- **$result->didFail()**  
+- $result->didSucceed()  
+- $result->didFail() 
 - $result->success
 - $result->context->value  
 - $result->context->error

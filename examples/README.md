@@ -40,43 +40,55 @@ This example is the foundation for understanding how the engine handles control 
 
 ---
 
-## Introducing Callbacks 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis, mi at pretium commodo, libero mi convallis tellus, 
-id volutpat lectus turpis vel turpis. Phasellus id luctus risus, in commodo mi. Phasellus tempus quis tellus sit amet malesuada. 
-Donec ultrices justo sed libero blandit, ac efficitur tellus sagittis. Etiam vulputate ante id nisi volutpat cursus. 
-Morbi pretium euismod laoreet. Donec elementum volutpat ante, eu tempus arcu malesuada non. Nam mauris arcu, 
-ornare a rutrum vitae, rutrum vitae massa. Suspendisse viverra ex ut ipsum commodo, id aliquet nibh tincidunt. 
-Quisque ac purus ac quam faucibus bibendum. Nunc a rhoncus lorem. Nulla imperdiet gravida ipsum, vitae suscipit 
-libero condimentum sed. Aenean eget diam iaculis, viverra nisi vel, suscipit massa. Sed ac arcu urna.
+## Introducing Callbacks
+
+Callbacks allow you to react to the final outcome of a workflow without mixing side‑effects into your workflow steps.
+
+A workflow can register two types of callbacks:
+
+- **success(Closure)** — executed only when the workflow completes successfully  
+- **failed(Closure)** — executed only when a step returns an error
+
+Callbacks are optional helpers.  
+They do **not** replace the `WorkflowResult` object.  
+You always receive a result and can still inspect it manually:
+
+- `$result->didSucceed()`  
+- `$result->didFail()`  
+- `$result->success`  
+- `$result->context->value`  
+- `$result->context->error`  
+- `$result->context->failedStep`
+
+This makes callbacks ideal for logging, notifications, or cleanup logic, while keeping your workflow steps pure and focused.
 
 [Introducing Callbacks Example](callbacks.php)
 
 ---
 
+
 ## Real World
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis, mi at pretium commodo, libero mi convallis tellus, 
-id volutpat lectus turpis vel turpis. Phasellus id luctus risus, in commodo mi. Phasellus tempus quis tellus sit amet malesuada. 
-Donec ultrices justo sed libero blandit, ac efficitur tellus sagittis. Etiam vulputate ante id nisi volutpat cursus. 
-Morbi pretium euismod laoreet. Donec elementum volutpat ante, eu tempus arcu malesuada non. Nam mauris arcu, 
-ornare a rutrum vitae, rutrum vitae massa. Suspendisse viverra ex ut ipsum commodo, id aliquet nibh tincidunt. 
-Quisque ac purus ac quam faucibus bibendum. Nunc a rhoncus lorem. Nulla imperdiet gravida ipsum, vitae suscipit 
-libero condimentum sed. Aenean eget diam iaculis, viverra nisi vel, suscipit massa. Sed ac arcu urna.
+This example demonstrates how a workflow can coordinate multiple services in a realistic scenario.  
+The workflow simulates a simple order‑processing pipeline:
+
+1. Validate the incoming order data  
+2. Create the order  
+3. Store it in a repository  
+4. Send a confirmation email  
+
+All supporting classes live in `examples/Misc/` and contain placeholder methods to keep the example focused on workflow orchestration rather than implementation details.
+
+Even in a real‑world workflow, you still receive a `WorkflowResult` object and can inspect:
+
+- `$result->didSucceed()`  
+- `$result->didFail()`  
+- `$result->context->value`  
+- `$result->context->error`  
+- `$result->context->failedStep`  
+
+This example shows how workflows can act as clean, predictable pipelines for multi‑step business logic.
 
 [Real World Example](realworld.php)
-
----
-
-## Tie it down
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis, mi at pretium commodo, libero mi convallis tellus, 
-id volutpat lectus turpis vel turpis. Phasellus id luctus risus, in commodo mi. Phasellus tempus quis tellus sit amet malesuada. 
-Donec ultrices justo sed libero blandit, ac efficitur tellus sagittis. Etiam vulputate ante id nisi volutpat cursus. 
-Morbi pretium euismod laoreet. Donec elementum volutpat ante, eu tempus arcu malesuada non. Nam mauris arcu, 
-ornare a rutrum vitae, rutrum vitae massa. Suspendisse viverra ex ut ipsum commodo, id aliquet nibh tincidunt. 
-Quisque ac purus ac quam faucibus bibendum. Nunc a rhoncus lorem. Nulla imperdiet gravida ipsum, vitae suscipit 
-libero condimentum sed. Aenean eget diam iaculis, viverra nisi vel, suscipit massa. Sed ac arcu urna.
-
-[Tie it down Example](typed.php)
 

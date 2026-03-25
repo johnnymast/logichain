@@ -40,15 +40,6 @@ Just a clean sequence of steps that tells the story of what your application is 
 
 ---
 
-# Did i overengineer this class?
-
-At first glance you might say yes! In the first local versions i just used to have the Workflow class and the sucess and failed methods.
-The downside of this was that i had failed but i had no concept of what have might wrong in the workflow causing it to fail. 
-
-If you are a backend engineer (like my self) you know how anoying errors without context can be. So i added the [WorkflowResult](src/WorkflowResult.php) and [WorkflowContext](src/WorkflowContext.php) so the there would
-alway be a concept of the source (the context) and the status of the Workflow with the [WorkflowResult](src/WorkflowResult.php) that will also be passed to the failed callback.
-This is how the project became a litle more technical but also more usefull in the end.
-
 ## MIT License
 
 Copyright (c) 2026 Johnny Mast <mastjohnny@gmail.com>

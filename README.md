@@ -16,6 +16,8 @@ If you’ve ever wished your application logic read more like a narrative and le
 Large features that once required hundreds or even thousands of lines of orchestration logic can now be expressed as a simple, readable pipeline:
 
 ```php
+use JohnnyMast\LogicChain\Workflow;
+
 $workflow = (new Workflow())
     ->add(new ValidateOrder())
     ->add(new CreateOrder())
@@ -36,6 +38,39 @@ Just a clean sequence of steps that tells the story of what your application is 
 
 
 ---
+
+## Installation 
+
+Install LogicChain via Composer:
+
+```bash
+composer require johnnymast/logichain
+```
+
+After installation, all classes are available under the namespace:
+
+```php
+JohnnyMast\LogicChain
+```
+
+--
+
+## Examples & Use Cases
+
+LogicChain includes a collection of practical examples that demonstrate how to build and structure chains for different scenarios.  
+If you want to explore real‑world use cases or see how to apply the library in your own projects, check the `examples/` directory in the project root.
+
+The examples show:
+
+- how to build a simple chain  
+- how to pass context between steps  
+- how to handle success and failure callbacks  
+- how to structure reusable step classes  
+- how to orchestrate multi‑step business logic  
+
+Exploring the examples is the quickest way to understand how LogicChain works in real applications.
+
+--
 
 
 ## Apache 2.0 License

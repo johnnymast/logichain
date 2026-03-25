@@ -72,7 +72,6 @@ Exploring the examples is the quickest way to understand how LogicChain works in
 
 --
 
-
 ## Apache 2.0 License
 
 LogicChain is licensed under the Apache License, Version 2.0 (Apache-2.0).

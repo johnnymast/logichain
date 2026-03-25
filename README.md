@@ -3,8 +3,6 @@
 
 # Workflow (Work in Progress)
 
-## Description
-
 Workflow is built on a simple belief: complex logic shouldn’t feel complex.
 This library gives you a clean, expressive way to structure multi‑step processes without drowning in conditionals, flags, or scattered service calls. Every workflow becomes a clear, linear story — one step at a time — with predictable behavior and a result you can always trust.
 
@@ -40,7 +38,7 @@ Just a clean sequence of steps that tells the story of what your application is 
 
 ---
 
-## MIT License
+# MIT License
 
 Copyright (c) 2026 Johnny Mast <mastjohnny@gmail.com>
 

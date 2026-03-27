@@ -8,7 +8,7 @@
 - [x] Double check documentation and code examples
 - [x] Comment code where needed 
 - [x] Comment examples and add output
-- [ ] Check donation pages
+- [x] Check donation pages
 - [x] Check badges
 
 ### Articles

@@ -1,6 +1,20 @@
 [![Run Pest Tests](https://github.com/johnnymast/workflow-php/actions/workflows/tests.yml/badge.svg)](https://github.com/johnnymast/workflow-php/actions/workflows/tests.yml)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 # LogicChain (Work in Progress)
+
+- [ ] Check examples
+- [ ] Double check tests
+- [ ] Double check documentation and code examples
+- [ ] Comment code where needed 
+- [ ] Check donation pages
+- [ ] Check badges
+
+### Articles
+
+- [ ] Check documentation for twitter / linked in
+- [ ] Check check promotie afbeelding
+
 
 Workflow is built on a simple belief: complex logic shouldn’t feel complex.
 This library gives you a clean, expressive way to structure multi‑step processes without drowning in conditionals, flags, or scattered service calls. Every workflow becomes a clear, linear story — one step at a time — with predictable behavior and a result you can always trust.

@@ -5,8 +5,8 @@
 
 ### Articles
 
-- [ ] Check documentation for twitter / linked in
-- [ ] Check promotion image
+- [x] Check documentation for twitter / linked in
+- [x] Check promotion image
 
 
 ### Before live

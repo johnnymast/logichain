@@ -1,4 +1,5 @@
 <?php
+namespace Tests\Feature;
 
 use JohnnyMast\LogicChain\Workflow;
 use JohnnyMast\LogicChain\WorkflowContext;
@@ -64,7 +65,7 @@ it('stops mutation when an error is returned', function () {
         })
         ->add(function (WorkflowContext $context) use (&$executed) {
             $executed++;
-            $context->value = 999; // mag nooit uitgevoerd worden
+            $context->value = 999; 
             return $context;
         });
 

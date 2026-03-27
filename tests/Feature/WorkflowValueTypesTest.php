@@ -1,5 +1,5 @@
-
 <?php
+namespace Tests\Feature;
 
 use JohnnyMast\LogicChain\Workflow;
 use JohnnyMast\LogicChain\WorkflowContext;
@@ -13,7 +13,7 @@ it('supports any value type', function () {
     expect($workflow->run("hello")->context->value)->toBe("hello");
     expect($workflow->run(['a' => 1])->context->value)->toBe(['a' => 1]);
 
-    $obj = new stdClass();
+    $obj = new \stdClass();
     $obj->x = 10;
 
     expect($workflow->run($obj)->context->value)->toBe($obj);

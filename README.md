@@ -3,13 +3,13 @@
 
 # LogicChain (Work in Progress)
 
-- [ ] Check examples
+- [x] Check examples
 - [ ] Double check tests
 - [ ] Double check documentation and code examples
 - [ ] Comment code where needed 
 - [ ] Comment examples and add output
 - [ ] Check donation pages
-- [ ] Check badges
+- [x] Check badges
 
 ### Articles
 

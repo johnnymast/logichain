@@ -1,5 +1,5 @@
-
 <?php
+namespace Tests\Unit;
 
 use JohnnyMast\LogicChain\Workflow;
 use JohnnyMast\LogicChain\WorkflowContext;

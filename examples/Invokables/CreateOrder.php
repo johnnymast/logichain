@@ -2,7 +2,7 @@
 
 namespace Examples\Invokables;
 
-use Johnny\Workflow\WorkflowContext;
+use JohnnyMast\LogicChain\WorkflowContext;
 
 class CreateOrder
 {

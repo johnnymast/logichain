@@ -45,6 +45,10 @@ Large features that once required hundreds or even thousands of lines of orchest
 
 ```php
 use JohnnyMast\LogicChain\Workflow;
+use Examples\Invokables\ValidateOrder;
+use Examples\Invokables\CreateOrder;
+use Examples\Invokables\StoreOrder;
+use Examples\Invokables\SendOrderEmail;
 
 $workflow = (new Workflow())
     ->add(new ValidateOrder())

@@ -3,12 +3,6 @@
 
 # LogicChain
 
-### Articles
-
-- [x] Check documentation for twitter / linked in
-- [x] Check promotion image
-
-
 ### Before live
 
 - [ ] Add package to packagist

@@ -1,15 +1,7 @@
 [![Run Pest Tests](https://github.com/johnnymast/workflow-php/actions/workflows/tests.yml/badge.svg)](https://github.com/johnnymast/workflow-php/actions/workflows/tests.yml)
 [![License](https://img.shields.io/badge/License-Apache_2.0-pink.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
-# LogicChain (Work in Progress)
-
-- [x] Check examples
-- [x] Double check tests
-- [x] Double check documentation and code examples
-- [x] Comment code where needed 
-- [x] Comment examples and add output
-- [x] Check donation pages
-- [x] Check badges
+# LogicChain
 
 ### Articles
 

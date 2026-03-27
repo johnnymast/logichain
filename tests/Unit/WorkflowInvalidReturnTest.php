@@ -7,7 +7,7 @@ use JohnnyMast\LogicChain\WorkflowContext;
 it('fails when a step does not return a WorkflowContext', function () {
 
     $workflow = (new Workflow())
-        ->add(fn () => 123); // fout type
+        ->add(fn () => 123); 
 
     $result = $workflow->run("start");
 

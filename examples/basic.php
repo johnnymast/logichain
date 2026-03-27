@@ -23,7 +23,5 @@ $workflow = (new Workflow())
 
 $result = $workflow->run(5);
 
-
-
-// Whill output 9 (5+1)*2 -3 = 9
+// Will output 9 (5+1)*2 -3 = 9
 print $result->context->value;

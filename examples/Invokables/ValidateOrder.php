@@ -8,7 +8,6 @@ class ValidateOrder
 {
     public function __invoke(WorkflowContext $context): WorkflowContext
     {
-        // Placeholder: validate order structure, customer, items, etc.
         return $context;
     }
 }

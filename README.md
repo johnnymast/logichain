@@ -4,8 +4,8 @@
 # LogicChain (Work in Progress)
 
 - [x] Check examples
-- [ ] Double check tests
-- [ ] Double check documentation and code examples
+- [x] Double check tests
+- [x] Double check documentation and code examples
 - [ ] Comment code where needed 
 - [ ] Comment examples and add output
 - [ ] Check donation pages
@@ -19,6 +19,7 @@
 
 ### Before live
 
+- [ ] Add package to packagist
 - [ ] Check donation pages
 - [ ] Check if there is a correct tag
 - [ ] Double check if there are open isuses.

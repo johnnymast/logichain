@@ -6,7 +6,7 @@ include __DIR__ . "/../vendor/autoload.php";
 use JohnnyMast\LogicChain\Workflow;
 use JohnnyMast\LogicChain\WorkflowContext;
 use JohnnyMast\LogicChain\WorkflowResult;
-use JohnnyMast\LogicChain\WorkflowResultFactory;
+
 
 $result = (new Workflow())
     ->add(function (WorkflowContext $context) {
@@ -40,7 +40,7 @@ $result = (new Workflow())
 // This will trigger the return with an error on line 23.
 // 
 // In result failed() will be triggered, this is optional 
-// because the returned value of function run will also have the 
+// because the returned value of the function run will also have the
 // same WorkflowResult as was passed to failed().
 //
 echo "=============================\n";
